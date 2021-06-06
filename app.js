@@ -1,7 +1,7 @@
 //* DOM Selectors
 
 const search = document.getElementById('search-text')
-const foodCard = document.querySelector('.food-card')
+const foodCard = document.querySelector('.card-list')
 
 
 function searchText(e) {
@@ -17,13 +17,15 @@ function searchText(e) {
           foodCard.innerHTML = `<p>There are no search results for ${userText}<p>`;
         } else {
           foodCard.innerHTML = data.meals
-            .map(meal => `
-            <div class="meal">
+            .map(meal => `        
+            <article class="card">
+              <header class="card-header">
+                <p id="cuisine">${meal.strArea}</p>
+                <h2>${meal.strMeal}</h2>
+              </header>
+  
               <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
-              <div class="meal-info" data-mealID="${meal.idMeal}">
-                <h3>${meal.strMeal}</h3>
-              </div>
-            </div>            
+            </article>
             `)
         }
       });
