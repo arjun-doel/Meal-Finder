@@ -13,7 +13,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 nav {
