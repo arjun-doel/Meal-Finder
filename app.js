@@ -23,9 +23,7 @@ function searchText(e) {
               <div class="meal-info" data-mealID="${meal.idMeal}">
                 <h3>${meal.strMeal}</h3>
               </div>
-            </div>
-            
-            
+            </div>            
             `)
         }
       });
