@@ -27,6 +27,22 @@ nav h1 {
   font-family: 'Dancing Script', cursive;
 }
 
+.green {
+  color: greenyellow;
+}
+
+.blue {
+  color: aqua;
+}
+
+.fa-pepper-hot {
+  color: red;
+}
+
+.fa-pizza-slice {
+  color: burlywood;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -58,7 +74,6 @@ nav h1 {
 .search-btn {
   display: flex;
   justify-content: center;
-  width: 0%;
   cursor: pointer;
   margin-top: 10px;
   font-size: 20px;
@@ -71,11 +86,14 @@ nav h1 {
 }
 
 .search-btn:hover {
-  width:100%;
-  font-size: 25px;
-  color: white;
-  background-position: 100%;
-  background-color: #d6336c;
+  font-size: 35px;
+  color: aqua;
+}
+
+.search-btn:active {
+  transform: scale(0.98);
+  font-size: 35px;
+  color: aqua;
 }
 
 
