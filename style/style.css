@@ -27,6 +27,11 @@ nav h1 {
   font-family: 'Dancing Script', cursive;
 }
 
+nav h1::after {
+  transition: font-size 1s ease-in;
+  font-size: 50px;
+}
+
 .green {
   color: greenyellow;
 }
@@ -51,12 +56,18 @@ nav h1 {
   height: 50vh;
 }
 
+.container::after {
+  transition: height 1s ease-in;
+  height: 10vh;
+}
+
 .search-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 
 #search-text {
   font-family: 'Libre Franklin', sans-serif;
